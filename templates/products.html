@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head><title>BuildMArt Procucts</title></head>
+
+    <body>
+        <h1>Available Products</h1>
+        <p>This is the products page.</p>
+        <ul>
+            {% for product in products %}
+            <li> {{product.name}} - {{product.category}} - RS{{product.price}} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
